@@ -6,9 +6,11 @@
 
  
  function addElementsOfAList(array){
-     return array.reduce((a,b) => a +b);
+     let newArray =  array.reduce((a,b) => a +b,0);
+     console.log(array);
+     return newArray;
  }
- let myArray= [1,2,3,4];
+ let myArray= [0,1,2,3,4];
  let result = addElementsOfAList(myArray);
 
  console.log(result);
