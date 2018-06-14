@@ -36,13 +36,13 @@ let multiplyByTwo = (x) =>  x * 2;
 /**
  * 
  * @param {Array} array  array of number
- * @param {function} multiplyByTwo callback function 
+ * @param {function} callback function 
  * @return {Array}  return array with double of element
  */
-let myOneMap = ((array, multiplyByTwo) => {
+let myOneMap = ((array, callback) => {
     let newArray = [];
     newArray = array.reduce((a, b) => {
-        a.push(multiplyByTwo(b));
+        a.push(callback(b));
         return a;
     }, []);
     return newArray;
