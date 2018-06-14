@@ -5,12 +5,17 @@
 let array = [1, 2, 3, 4];
 
 
+
+let sum = (a,b) => a+b;
+
+let multiply = (a,b) => a * b;
 /**
  * 
  * @param {Array} array of number
  * @return {Number} return sum of all elements
  */
-let addElementsOfAList = ((array) => array.reduce((a, b) => a + b, 0));
+
+let addElementsOfAList = ((array) => array.reduce(sum, 0));
 
 
 
@@ -18,7 +23,7 @@ let addElementsOfAList = ((array) => array.reduce((a, b) => a + b, 0));
  * @param {array}
  * @return {Number} Returns the result of multiplication of all element
  */
-let multiplyElementsOfAList = ((array) => array.reduce((a, b) => a * b, 1));
+let multiplyElementsOfAList = ((array) => array.reduce(multiply, 1));
 
 
 
