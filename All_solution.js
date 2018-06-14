@@ -10,7 +10,7 @@
  let addElementsOfAList = ((array) => array.reduce((a,b) => a + b,0));
 
  // product off array element
- let multiplyElementsOfAList = ((array) => array.reduce((a,b) => a * b));
+ let multiplyElementsOfAList = ((array) => array.reduce((a,b) => a * b,1));
 
  // new array with element square
  let myOneMap= ((array) => array.reduce((a,b) => {a.push(b*2); return a;},[]));
